@@ -1,0 +1,118 @@
+/* ページ共有部分 */
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.7;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* ヘッダー部分 */
+
+.main-nav ul {
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 34px;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #343a40;
+}
+
+/* メイン部分 */
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+main {
+    width: 74%;
+}
+
+.article a {
+    color: black;
+}
+
+.article p {
+    color: gray;
+    padding: 0 0 0 50px;
+    margin: 0 0 10px 0;
+}
+.article h5 {
+    text-align: right;
+}
+
+.article-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* サイド部分 */
+
+aside {
+    width: 22%;
+    text-align: center;
+}
+
+aside p {
+    padding: 0 10px;
+}
+
+.thumbnail {
+    width: 210px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* ページネーション部分 */
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 30px;
+}
+
+/* フッター部分 */
+
+footer {
+    text-align: center;
+    padding: 26px 0;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #343a40;
+}

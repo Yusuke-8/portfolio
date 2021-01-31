@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+    {% block css_link %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="page-header wrapper">
+        <h1>Tomosuke 技術ブログ</h1>
+        <nav class="main-nav">
+            <ul>
+                <li ><a href="{% url 'blog:index' %}">Home</a></li>
+                <li ><a href="https://qiita.com/tomosuke-guitar">Qiita</a></li>
+                <li ><a href="https://twitter.com/8_tomosuke">twitter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contents wrapper">
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+        <aside>
+            <h3>自己紹介</h3>
+            <img src="{% static 'img/bluenote.jpg' %}" alt="自分の写真" class="thumbnail">
+            <p>趣味:ギター 旅行</p>
+            <p>技術ブログとして頑張っていきたいと思いたい</p>
+            <div>
+                {% block category %}
+                {% endblock %}
+            </div>
+        </aside>
+    </div>
+    <div class="pagination wrapper">
+        {% block pagination %}
+        {% endblock %}
+    </div>
+    <footer>
+        <div class="wrapper">
+            <span>copyright2021 Tomosuke-8</span>
+        </div>
+    </footer>
+    {% block javascript %}{% endblock %}
+</body>
+</html>
