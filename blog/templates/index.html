@@ -7,6 +7,7 @@
 <h1>投稿記事</h1>
 <hr>
 {% for article in article_list %}
+{% if article.release %}
 <div class="article">
     <div class="article-title">
         <h2><a href="{% url 'blog:article' article.pk %}">{{article.title}}</a></h2>
@@ -14,6 +15,7 @@
     </div>
     <p>{{article.snippet}}</p>
 </div>
+{% endif %}
 {% endfor %}
 {% endblock %}
 
