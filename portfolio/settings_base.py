@@ -131,3 +131,9 @@ STATICFILES_DIRS = (
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 MEDIA_URL = '/media/'
+
+MDEDITOR_CONFIGS = {
+    'default': {
+        'language': 'en',
+    }
+}
