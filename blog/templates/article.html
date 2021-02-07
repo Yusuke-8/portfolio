@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% load markdown_extras %}
 {% load static %}
-{% block title %}{{title}}{% endblock %}
+{% block title %}{{article.title}}{% endblock %}
 
 {% block css_link %}
 <link href="{% static 'mdeditor/css/editormd.min.css' %}" rel="stylesheet">
