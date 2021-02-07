@@ -70,6 +70,11 @@ main {
     text-align: right;
 }
 
+.detail-article img {
+    width: 100%;
+    height: 100%;
+}
+
 .article-title {
     display: flex;
     align-items: flex-end;
