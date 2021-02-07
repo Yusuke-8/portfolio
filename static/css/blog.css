@@ -107,6 +107,7 @@ aside p {
 
 .pagination li {
     margin: 30px;
+    list-style: none;
 }
 
 /* フッター部分 */
