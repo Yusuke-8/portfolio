@@ -12,10 +12,6 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
-}
-
 .wrapper {
     margin: 0 auto;
     padding: 0 4%;
@@ -31,6 +27,7 @@ li {
 
 .main-nav li {
     margin-left: 36px;
+    list-style: none;
 }
 
 .main-nav a {
